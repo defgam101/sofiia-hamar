@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.part-2 {
+    background-image: url(img/2_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%201%20-%20%D0%BA%D0%BE%D0%BF%D1%96%D1%8F.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: auto;
+
+}
+
+.bup {
+    font-family: Maler;
+    font-size: 3vh;
+    color: darkgray;
+}
+
+.inst {
+    grid-area: inst;
+    margin-right: 20px;
+}
+
+.beh {
+    grid-area: beh;
+}
+
+.bup:hover {
+    color: gray;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.content-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas:
+        ". . . . . . ."". text text . image image ."". text text . image image ."". inst beh . . . .";
+    height: 100vh;
+    width: 100%;
+}
+
+.text {
+    margin-top: -60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hi hi""about about""about about""about about";
+    grid-area: text;
+}
+
+#hi {
+    grid-area: hi;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+h1 {
+    font-family: Maler;
+    font-size: 8vh;
+    color: grey;
+    margin-top: -25px;
+}
+
+p {
+    font-family: Museo Sans;
+    font-size: 20px;
+    text-align: left;
+}
+
+#about1 {
+    margin-top: -25px;
+    grid-area: about;
+}
+
+#image {
+    margin-top: -60px;
+    grid-area: image;
+    background-image: url(img/imaage.png);
+    background-size: contain;
+    height: 450px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:720px) {
+    p {
+        font-size: 18px;
+    }
+
+    .part-2 {
+        background-size: cover;
+    }
+
+}
+
+@media (max-width:540px) {
+
+    .content-2 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: ". hi ."". about ."". . ."". . .";
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .part-2 {
+        background-size: cover;
+    }
+    
+    #image {
+        height: 330px;
+        width: 330px;
+        margin-top: -240px;
+    }
+    
+    .text {
+        margin-top: 120px;
+    }
+    
+    .inst {
+        margin-top: 320px;
+    }
+    
+    .beh {
+        margin-top: 320px;
+        margin-left: 140px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+}
+

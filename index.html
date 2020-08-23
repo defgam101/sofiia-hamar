@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sofiia Hamar</title>
+    <link rel="stylesheet" href="illustration.css">
+    <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="port.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
+
+
+
+
+</head>
+
+<body>
+    <div class="part-1">
+
+        <div class="grid-container">
+            <div class="header">
+                <a href="index.html">
+                    <div id="logo"><img src="img/logo.png" alt="logo">
+                    </div>
+                </a>
+
+
+                <div class="menu">
+                    <ul class="nav">
+                        <li><a href="#about" class="menu-item">про мене</a></li>
+                        <li><a href="#photo" class="menu-item">фото</a></li>
+                        <li><a href="#illustration" class="menu-item">ілюстрація</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="name">
+                    <h1>Софiя Гамар</h1>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="part-2" id="about">
+        <div class="grid-container">
+
+            <div class="content-2">
+
+                <div class="text">
+                    <div id="hi">
+                        <h1>Привiт!</h1>
+                    </div>
+                    <div id="about1">
+                        <p>Мене звати Софія <br> і я студентка кафедри Графічного дизайну у ЛНАМ<br>
+                         Люблю простоту у всьому - саме тому шукаю себе у векторнiй графiцi, подобається створювати книжковi обкладинки та iлюстрацiї.
+Також займаюся фотографiєю - але для мене це бiльше хобi, анiж майбутня профеciя)  
+                           <br> 
+                            <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="inst">
+                    <a href="https://www.instagram.com/def.gamar/?hl=uk" target="_blank" class="bup">instagram</a>
+                </div>
+
+                <div class="beh">
+                    <a href="https://www.behance.net/sofiiahamar" target="_blank" class="bup">behance</a>
+                </div>
+
+
+
+
+                <div id="image"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="part-3" id="photo">
+        <div class="grid-container">
+
+
+            <div class="content-3">
+
+                <div class="row">
+
+                    <div class="coll">
+                        <a href="img/ph3.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/ph3.jpg" class="">
+                        </a>
+                    </div>
+
+                    <div class="coll">
+                        <a href="img/ph4.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/ph4.jpg" class="">
+                        </a>
+                    </div>
+
+                    <div class="coll">
+                        <a href="img/zz.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/zz.jpg" class="">
+                        </a>
+                    </div>
+
+                    <div class="coll">
+                        <a href="img/ph1.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/ph1.jpg" class="">
+                        </a>
+                    </div>
+
+                    <div class="coll">
+                        <a href="img/ph2.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/ph2.jpg" class="">
+                        </a>
+                    </div>
+
+                    <div class="coll">
+                        <a href="img/ph6.jpg" class="js-smartPhoto" data-group="works">
+                            <img src="img/ph6.jpg" class="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="part-4" id="illustration">
+        <div class="grid-container">
+            <div class="content-4">
+               
+               <div class="ill"></div>
+               
+                <div class="content-slider">
+                    <ul id="lightSlider2">
+                        <li>
+                            <img src="img/image1.jpg">
+                        </li>
+                        <li>
+                            <img src="img/image2.jpg">
+                        </li>
+                        <li>
+                            <img src="img/image3.jpg">
+                        </li>
+                        <li>
+                            <img src="img/image4.jpg">
+                        </li>
+                        <li>
+                            <img src="img/image5.jpg">
+                        </li>
+                        <li>
+                            <img src="img/image6.jpg">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- скрипт меню -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $(".menu-item").click(function() {
+                $(".menu-item").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+
+
+    <!-- скрипт illustration -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- скрипт photo -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://unpkg.com/smartphoto@1.1.0/js/jquery-smartphoto.js"></script>
+
+    <script>
+        $(function() {
+            $(".js-smartPhoto").SmartPhoto();
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+            $("#lightSlider2").lightSlider({
+                item: 1,
+                auto: true,
+                speed: 1000,
+                pause: 3000,
+                loop: true,
+            });
+
+        });
+    </script>
+
+
+</body></html>

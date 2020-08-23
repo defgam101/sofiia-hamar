@@ -1,0 +1,190 @@
+* {
+    
+    box-sizing: border-box;
+    
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.part-1 {
+    background-image: url(img/bb1_%D0%9C%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%201.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: auto;
+
+}
+
+@font-face {
+    src: url(fonts/Museo_Sans.ttf);
+    font-family: Museo Sans;
+}
+
+@font-face {
+    src: url(fonts/Maler.ttf);
+    font-family: Maler;
+}
+
+.grid-container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 13% 4fr;
+    grid-template-areas: "header""content";
+    height: 100vh;
+    width: auto;
+}
+
+.header {
+    background-color: #303030;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo . menu menu menu . .";
+    grid-area: header;
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+
+#logo img {
+    grid-area: logo;
+    width: 100px;
+    margin-top: 15px;
+    background-size: contain;
+    margin-left: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu {
+    grid-area: menu;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 35px;
+    padding-right: 15px;
+
+}
+
+ul {
+    
+    list-style-type: none;
+}
+
+
+a href {
+    text-decoration: none;
+
+    font-family: Museo Sans;
+    list-style: none;
+    font-size: 3vh;
+    margin-left: -35px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: gainsboro;
+    font-family: Museo Sans;
+    list-style: none;
+    font-size: 3vh;
+    margin-left: -35px;
+}
+
+.menu-item:hover {
+    color: whitesmoke;
+    transform: none;
+}
+
+.menu-item.active {
+    color: whitesmoke;
+    border-bottom-style: solid;
+    border-color: whitesmoke;
+}
+
+.li {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . ."". name name name ."". . . . ."". . . . .";
+    grid-area: content;
+}
+
+.name {
+    grid-area: name;
+    margin-bottom: 0;
+    margin-top: 65px;
+    text-align: center;
+    height: 100%;
+    
+}
+
+h1 {
+    font-family: Maler;
+    font-size: 11vh;
+    color: gray;
+}
+
+
+@media (max-width:720px) {
+
+    h1 {
+        font-size: 9vh;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo . menu menu menu ";
+    }
+
+    .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". . . ."" . name name ."". . . . "". . . .";
+    }
+
+    li {
+        font-size: 30px;
+    }
+    
+    .part-1 {
+        background-size: cover;
+    }
+}
+
+@media (max-width:540px) {
+
+    .header {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo . menu menu menu menu ";
+    }
+
+    h1 {
+        font-size: 8vh;
+    }
+
+    li {
+        font-size: 21px;
+    }
+    
+    .part-1 {
+        background-size: cover;
+    }
+}
